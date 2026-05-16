@@ -1,4 +1,4 @@
-{% load static %}
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Federal University of Agriculture & Technology FUATECH, |Obio Akpa </title>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;90<0&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet"/>
-  <link href="{% static "styles1.css" %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static "styles1.css" %}">
 </head>
 <body>
 
@@ -32,6 +32,7 @@
 =============================================================================== -->
 <div class="mobile-nav" id="mobileNav">
   <a href="#">About</a>
+  <a href="#">Academics</a>
   <a href="#">Admissions</a>
   <a href="#">Research</a>
   <a href="#">Student Life</a>
@@ -73,20 +74,19 @@
   <div class="hero-inner">
     <div class="hero-text fade-in">
       <span class="hero-tag">🇳🇬 Agricultural & Technology University</span>
-      <h1>Shaping Nigerian Agricultural Innovation and Technology Futures</h1>
-      <p>The Federal University of Agriculture &amp; Technology(FUATECH), Obio Akpa  is dedicated to delivering world-class research in Agriculture and technology — empowering students to innovate and dominate the agricultural sector.</p>
+      <h1>Faculty of Agribusiness &amp Management Technology</h1>
+      <p>The Federal University of Agriculture and Technology (FUATECH) prevails in the field of
+        agriculture and has spledid infrastructure.
+      </p>
       <div class="hero-btns">
         <a href="#" class="btn-primary">Apply for Admission</a>
         <a href="#" class="btn-outline">Explore Programmes</a>
       </div>
     </div>
     <div class="hero-card fade-in">
-      <h3>University at a Glance</h3>
+      <h3 class="stat-box">We Stem Growth</h3>
       <div class="stat-row">
-        <div class="stat-box"><div class="stat-num">7+</div><div class="stat-label">Faculties</div></div>
-        <div class="stat-box"><div class="stat-num">40+</div><div class="stat-label">Departments</div></div>
-        <div class="stat-box"><div class="stat-num">10K+</div><div class="stat-label">Projected Students</div></div>
-        <div class="stat-box"><div class="stat-num">FG</div><div class="stat-label">Federal Government</div></div>
+        <img src="{% static 'images/leaves.jpg' %}" alt="Agriculture Image 1" class="stat-img">
       </div>
     </div>
   </div>
@@ -98,9 +98,7 @@
 =============================================================================== -->
 <div class="quicklinks">
   <div class="quicklinks-inner">
-
-    <img src="" alt="">
-    <a href="" class="ql-item"><span class="ql-icon">📋</span>Apply for Admission</a>
+    <a href="#" class="ql-item"><span class="ql-icon">📋</span>Apply for Admission</a>
     <a href="#" class="ql-item"><span class="ql-icon">🏛️</span>Academic Programmes</a>
     <a href="#" class="ql-item"><span class="ql-icon">📰</span>Latest News &amp; Events</a>
     <a href="#" class="ql-item"><span class="ql-icon">🔬</span>Research Institute</a>
@@ -150,7 +148,7 @@
     <div class="divider"></div>
     <div class="prog-grid fade-in">
       <div class="prog-card">
-        <a href="{% url 'agriculture' %}">
+        <a href="{% url "agriculture" %}">
         <div class="prog-img" style="background-image:url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800&q=80');"></div>
         <div class="prog-card-head" style="background:#007a46;">
           <div class="icon">🌱</div>
@@ -165,7 +163,7 @@
             <li>Soil Science & Irrigation Management</li>
           </ul>
         </div>
-      </a>
+    </a>
       </div>
       <div class="prog-card">
         <div class="prog-img" style="background-image:url('https://loremflickr.com/800/420/medicinal,herbs,plants,green?lock=2');"></div>
@@ -184,7 +182,7 @@
         </div>
       </div>
       <div class="prog-card">
-        <a href="{% url 'nutrition' %}">
+        <a href='{% url "nutrition" %}'>
         <div class="prog-img" style="background-image:url('https://loremflickr.com/800/420/food,plate,fruits,colorful,meal?lock=3');"></div>
         <div class="prog-card-head" style="background: #009e5a;">
           <div class="icon">🍎</div>
@@ -202,7 +200,7 @@
       </a>
       </div>
       <div class="prog-card">
-        <a href= {% url "engineering" %}>
+        <a href="{% url "engineering" %}">
         <div class="prog-img" style="background-image:url('https://loremflickr.com/800/420/tractor,farm,agriculture,machinery?lock=4');"></div>
         <div class="prog-card-head">
           <div class="icon">⚙️</div>
@@ -235,10 +233,9 @@
             <li>Cybersecurity</li>
           </ul>
         </div>
-      </a>
+    </a>
       </div>
       <div class="prog-card">
-        <a href='{% url "agribusiness" %}'>
         <div class="prog-img" style="background-image:url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80');"></div>
         <div class="prog-card-head" style="background: #4a7c59;">
           <div class="icon">📊</div>
@@ -252,7 +249,6 @@
             <li>Accounting</li>
             <li>Business Management</li>
           </ul>
-        </a>
         </div>
       </div>
     </div>
@@ -427,6 +423,6 @@
   </div>
 </footer>
 
-  <script src="{% static 'script1.js' %}"></script>
+  <script src="{% static 'script1.js'%}"></script>
 </body>
 </html>

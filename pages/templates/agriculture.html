@@ -55,7 +55,7 @@
     </a>
     <nav>
       <a href="#">About</a>
-      <a href="#">Academics</a>
+      <a href="#academics">Academics</a>
       <a href="#">Admissions</a>
       <a href="#">Research</a>
       <a href="#">Student Life</a>
@@ -86,6 +86,7 @@
     <div class="hero-card fade-in">
       <h3 class="stat-box">We Stem Growth</h3>
       <div class="stat-row">
+        <img src="{% static 'images/leaves.jpg' %}" alt="Agriculture Image 1" class="stat-img">
       </div>
     </div>
   </div>
@@ -140,7 +141,7 @@
   PROGRAMMES SECTION
   Displays faculties and academic programmes
 =============================================================================== -->
-<section class="programmes">
+<section class="programmes" id="academics">
   <div class="section-inner">
     <div class="section-label">Academic Offerings</div>
     <h2 class="section-title">Our Faculties &amp; Programmes</h2>
@@ -179,6 +180,7 @@
         </div>
       </div>
       <div class="prog-card">
+        <a href="{% url "nutrition" %}">
         <div class="prog-img" style="background-image:url('https://loremflickr.com/800/420/food,plate,fruits,colorful,meal?lock=3');"></div>
         <div class="prog-card-head" style="background: #009e5a;">
           <div class="icon">🍎</div>
@@ -193,8 +195,10 @@
             <li>Agro-Processing, Preservation & Value Addition</li>
           </ul>
         </div>
+      </a>
       </div>
       <div class="prog-card">
+        <a href="{% url "engineering" %}">
         <div class="prog-img" style="background-image:url('https://loremflickr.com/800/420/tractor,farm,agriculture,machinery?lock=4');"></div>
         <div class="prog-card-head">
           <div class="icon">⚙️</div>
@@ -209,8 +213,10 @@
             <li>Civil Engineering</li>
           </ul>
         </div>
+      </a>
       </div>
       <div class="prog-card">
+        <a href="{% url "computing" %}">
         <div class="prog-img" style="background-image:url('https://loremflickr.com/800/420/computer,coding,programming,technology?lock=5');"></div>
         <div class="prog-card-head" style="background: #005a32;">
           <div class="icon">💻</div>
@@ -225,8 +231,10 @@
             <li>Cybersecurity</li>
           </ul>
         </div>
+        </a>
       </div>
       <div class="prog-card">
+        <a href='agribusiness'>
         <div class="prog-img" style="background-image:url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80');"></div>
         <div class="prog-card-head" style="background: #4a7c59;">
           <div class="icon">📊</div>
@@ -241,6 +249,7 @@
             <li>Business Management</li>
           </ul>
         </div>
+      </a>
       </div>
     </div>
   </div>
