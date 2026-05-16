@@ -164,6 +164,7 @@
         </div>
       </div>
       <div class="prog-card">
+        <a href='{% url "health" %}'>
         <div class="prog-img" style="background-image:url('https://loremflickr.com/800/420/medicinal,herbs,plants,green?lock=2');"></div>
         <div class="prog-card-head" style="background: #008f52;">
           <div class="icon">🔭</div>
@@ -178,6 +179,7 @@
             <li>Public Health</li>
           </ul>
         </div>
+      </a>
       </div>
       <div class="prog-card">
         <a href="{% url "nutrition" %}">
@@ -234,7 +236,7 @@
         </a>
       </div>
       <div class="prog-card">
-        <a href='agribusiness'>
+        <a href='{% url "agribusiness" %}'>
         <div class="prog-img" style="background-image:url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80');"></div>
         <div class="prog-card-head" style="background: #4a7c59;">
           <div class="icon">📊</div>

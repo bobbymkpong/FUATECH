@@ -74,9 +74,11 @@
   <div class="hero-inner">
     <div class="hero-text fade-in">
       <span class="hero-tag">🇳🇬 Agricultural & Technology University</span>
-      <h1>Faculty of Engineering &amp Tech</h1>
-      <p>FUATECH has the resources and materials capable of creating engineering scholars anywhere
-        around the globe.
+      <h1>Faculty of Occupational Health &amp Environmental Sustainability</h1>
+      <p>FUATECH is committed to advancing knowledge and fostering innovation 
+        in the fields of occupational health and environmental sustainability. Our
+        faculty offers cutting-edge research opportunities and comprehensive
+        academic programs designed to prepare students for impactful careers.
       </p>
       <div class="hero-btns">
         <a href="#" class="btn-primary">Apply for Admission</a>
@@ -84,9 +86,9 @@
       </div>
     </div>
     <div class="hero-card fade-in">
-      <h3 class="stat-box">We Build the Future</h3>
+      <h3 class="stat-box">We Stem Growth</h3>
       <div class="stat-row">
-        <img src="{% static 'images/engineering.jpg' %}" alt="Engineering Image 1" class="stat-img">
+        <img src="{% static 'images/health.jpg' %}" alt="Agriculture Image 1" class="stat-img">
       </div>
     </div>
   </div>
@@ -148,7 +150,7 @@
     <div class="divider"></div>
     <div class="prog-grid fade-in">
       <div class="prog-card">
-        <a href="{% url "agriculture" %}">
+        <a href='{% url "agriculture" %}'>
         <div class="prog-img" style="background-image:url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800&q=80');"></div>
         <div class="prog-card-head" style="background:#007a46;">
           <div class="icon">🌱</div>
@@ -166,7 +168,6 @@
     </a>
       </div>
       <div class="prog-card">
-        <a href='{% url "health" %}'>
         <div class="prog-img" style="background-image:url('https://loremflickr.com/800/420/medicinal,herbs,plants,green?lock=2');"></div>
         <div class="prog-card-head" style="background: #008f52;">
           <div class="icon">🔭</div>
@@ -181,7 +182,6 @@
             <li>Public Health</li>
           </ul>
         </div>
-      </a>
       </div>
       <div class="prog-card">
         <a href="{% url "nutrition" %}">
@@ -199,9 +199,10 @@
             <li>Agro-Processing, Preservation & Value Addition</li>
           </ul>
         </div>
-    </a>
+      </a>
       </div>
       <div class="prog-card">
+        <a href="{% url "engineering" %}">
         <div class="prog-img" style="background-image:url('https://loremflickr.com/800/420/tractor,farm,agriculture,machinery?lock=4');"></div>
         <div class="prog-card-head">
           <div class="icon">⚙️</div>
@@ -216,6 +217,7 @@
             <li>Civil Engineering</li>
           </ul>
         </div>
+      </a>
       </div>
       <div class="prog-card">
         <a href="{% url "computing" %}">

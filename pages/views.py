@@ -15,3 +15,6 @@ def nutrition(request):
 
 def agribusiness(request):
     return render(request,'agribusiness.html')
+
+def health(request):
+    return render(request,'health.html')
