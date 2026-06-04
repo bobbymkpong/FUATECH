@@ -1,0 +1,5 @@
+/* Test CSS to verify external stylesheet loading */
+body { background: #ffecec !important; }
+header { border: 6px solid #ff0000 !important; }
+.topbar { outline: 4px solid #ff6600 !important; }
+.inline-test-banner { background: #222 !important; color: #fff !important; }
